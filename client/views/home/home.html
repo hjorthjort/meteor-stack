@@ -1,29 +1,37 @@
 <template name="home">
-	<nav>
-		<div class="nav-wrapper">
-			<div class="row">
-				<div class="col s12">
-					<h4 class="center">STACK</h4>
-				</div>
-			</div>
-		</div>
-	</nav>
-	<div class="container">
-		<div class="row">
-			<div class="col s12">
-				<h5 class="center bold"><strong>Where the f**k was I?</strong></h5>
-					<textarea class="materialize-textarea" placeholder="Diska"></textarea>
-			</div>			
-		</div>
-		<div class="row">
-		<div class="col s4 offset-s4">
-						<a id="popButton" class="btn-large">Pop</a>	
-					</div>
-			<div class="col s4">
-				<h5>Stack</h5>
-					{{> stack}}
-			</div>
-			
-		</div>
-	</div>
+    <nav>
+        <div class="nav-wrapper blue-grey">
+            <div class="row">
+                <div class="col s12">
+                    <h4 class="center">Stack-Popper</h4>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h5>New Element</h5>
+                <textarea class="materialize-textarea" placeholder="Take out the garbage"></textarea>
+            </div>			
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <a id="doneButton" class="waves-effect waves-light btn-large">Done</a>	
+            </div>
+            <div class="col s4 offset-s4">
+                <a id="popButton" class="waves-effect waves-light btn-large">Pop</a>	
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s4">
+                <h5>Done</h5>
+                {{> donestack}}
+            </div>
+            <div class="col s4 offset-s4">
+                <h5>Stack</h5>
+                {{> doingstack}}
+            </div>
+        </div>
+    </div>
 </template>
