@@ -1,5 +1,13 @@
 Template.stack.helpers({
     stackitems: function () {
-        return DoingStack.find();
+        var found = DoingStack.find(
+            {},
+            {
+                sort: {
+                    timestamp: -1
+                }
+            }
+        );
+        return found;
     }
 });
