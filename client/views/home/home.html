@@ -1,19 +1,21 @@
 <template name="home">
-	<div class="container">
-		<div class="row">
-			<div class="col s12">
-				<h1>Welcome home</h1>
+	<nav>
+		<div class="nav-wrapper blue-grey">
+			<div class="row">
+				<div class="col s12">
+					<h4 class="center">Stack-Poper</h4>
+				</div>
 			</div>
 		</div>
+	</nav>
+	<div class="container">
 		<div class="row">
 			<div class="col s6">
-				<h3>New Stack item</h3>
-				
+				<h5>New Stack item</h5>
 					<textarea class="materialize-textarea" placeholder="New stack"></textarea>
-				
 			</div>
 			<div class="col s6">
-				<h3>Stack List</h3>
+				<h5>Stack List</h5>
 					{{> stack}}
 			</div>			
 		</div>
