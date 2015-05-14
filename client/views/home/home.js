@@ -32,5 +32,20 @@ Template.home.events({
         );
         // Set the text areas value to the last found stack item
         instance.find('textarea').value = last.stackItem;
+    },
+
+    'click a#doneButton': function(event, instance) {
+        var trim = function(str) {
+            return str.replace(/^\s+|\s+$/g, '');
+        };
+
+        var value = instance.find('textarea').value;
+        value = trim(value);
+        instance.find('textarea').value = '';
+
+        DoneStack.insert({
+            timestamp: new Date,
+            stackItem: value
+        })
     }
 });
