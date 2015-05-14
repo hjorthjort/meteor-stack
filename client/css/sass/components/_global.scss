@@ -412,17 +412,17 @@ td, th{
 // Collections
 .collection {
   margin: $element-top-margin 0 $element-bottom-margin 0;
-  border: 1px solid $collection-border-color;
+  border: 1px solid #586e75;
   border-radius: 2px;
   overflow: hidden;
   position: relative;
 
   .collection-item {
-    background-color: $collection-bg-color;
+    background-color: #93a1a1;
     line-height: 1.5rem;
     padding: 10px 20px;
     margin: 0;
-    border-bottom: 1px solid $collection-border-color;
+    border-bottom: 1px solid #586e75;
 
     // Avatar Collection
     &.avatar {
@@ -488,7 +488,7 @@ td, th{
   &.with-header {
     .collection-header {
       background-color: $collection-bg-color;
-      border-bottom: 1px solid $collection-border-color;
+      border-bottom: 1px solid #586e75;
       padding: 10px 20px;
     }
     .collection-item {

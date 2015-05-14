@@ -26,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #eee8d5;
 }
 
+p {
+  color: #073642;
+}
+
 // Header Styles
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: $h1-fontsize; line-height: 1.1*$h1-fontsize; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
