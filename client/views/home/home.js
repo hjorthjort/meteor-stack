@@ -8,11 +8,12 @@ Template.home.events({
             var value = instance.find('textarea').value;
             value = trim(value);
             instance.find('textarea').value = '';
-
-            DoingStack.insert({
-                timestamp: new Date,
-                stackItem: value
-            });
+            if(value.length) {
+              DoingStack.insert({
+                  timestamp: new Date,
+                  stackItem: value
+              });
+            }
         }
     },
 
@@ -42,10 +43,11 @@ Template.home.events({
         var value = instance.find('textarea').value;
         value = trim(value);
         instance.find('textarea').value = '';
-
-        DoneStack.insert({
-            timestamp: new Date,
-            stackItem: value
-        })
+        if(value.length) {
+          DoneStack.insert({
+              timestamp: new Date,
+              stackItem: value
+          })
+        }
     }
 });
