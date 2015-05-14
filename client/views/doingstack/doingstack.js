@@ -1,4 +1,4 @@
-Template.stack.helpers({
+Template.doingstack.helpers({
     stackitems: function () {
         var found = DoingStack.find(
             {},
