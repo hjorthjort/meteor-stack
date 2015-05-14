@@ -4,7 +4,10 @@ Template.home.events({
       var value = instance.find('textarea').value;
       instance.find('textarea').value = '';
 
-      DoingStack.insert({stackItem: value});
+      DoingStack.insert({
+          timestamp: new Date,
+          stackItem: value
+        });
     }
   }
 });
