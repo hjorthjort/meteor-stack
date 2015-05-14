@@ -1,10 +1,10 @@
 nav {
-  color: #fff;
+  color: #eee8d5;
   @extend .z-depth-1;
-  background-color: $primary-color;
+  background-color: #002b36;
   width: 100%;
   height: $navbar-height-mobile;
-  line-height: $navbar-height-mobile;
+  line-height: $navbar-height-mobile
 
   a { color: #fff; }
 

@@ -194,8 +194,12 @@ textarea {
     overflow-y: hidden; /* prevents scroll bar flash */
     padding: 1.6rem 0; /* prevents text jump on Enter keypress */
     resize: none;
+    color: #d33682;
     min-height: 3rem;
   }
+}
+::-webkit-input-placeholder {
+   color: #d33682;
 }
 
 

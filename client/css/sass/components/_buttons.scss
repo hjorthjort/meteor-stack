@@ -40,7 +40,7 @@
 .btn {
   text-decoration:none;
   color: $button-color-raised;
-  background-color: $button-color;
+  background-color: #b58900;
   text-align: center;
   letter-spacing: .5px;
   @extend .z-depth-1;
@@ -48,7 +48,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: lighten($button-color, 5%);
+    background-color: lighten(#b58900, 5%);
     @extend .z-depth-1-half;
   }
 }
