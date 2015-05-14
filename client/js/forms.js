@@ -104,7 +104,7 @@
         hiddenDiv.css('width', $(window).width()/2);
       }
 
-      $textarea.css('height', 300);//hiddenDiv.height());
+      $textarea.css('height', hiddenDiv.height());
     }
 
     $(text_area_selector).each(function () {
