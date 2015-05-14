@@ -9,5 +9,20 @@ Template.home.events({
           stackItem: value
         });
     }
+  },
+
+  'click a#popButton': function(event, instance) {
+      var last = DoingStack.findOne(
+          {},
+          {
+              sort: {
+                  timestamp: -1
+              }
+          }
+      );
+      DoingStack.remove(
+          { _id: last._id }
+      );
+      instance.find('textarea').value = last.stackItem;
   }
 });
