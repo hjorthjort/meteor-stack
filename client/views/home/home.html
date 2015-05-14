@@ -3,7 +3,7 @@
 		<div class="nav-wrapper blue-grey">
 			<div class="row">
 				<div class="col s12">
-					<h4 class="center">Stack-Poper</h4>
+					<h4 class="center">Stack-Popper</h4>
 				</div>
 			</div>
 		</div>
@@ -11,11 +11,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col s6">
-				<h5>New Stack item</h5>
-					<textarea class="materialize-textarea" placeholder="New stack"></textarea>
+				<div class="row">
+					<div class="col s12">
+						<h5>New Element</h5>
+							<textarea class="materialize-textarea" placeholder="Take out the garbage"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s6 offset-s3">
+						<a class="waves-effect waves-light btn-large">Pop</a>	
+					</div>
+				</div>
 			</div>
 			<div class="col s6">
-				<h5>Stack List</h5>
+				<h5>Stack</h5>
 					{{> stack}}
 			</div>			
 		</div>
